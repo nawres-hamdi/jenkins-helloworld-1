@@ -17,3 +17,5 @@ pipeline {
                 sh "cd jenkins-helloworld/ && java Main"
         }
     }
+    }
+}
