@@ -5,14 +5,14 @@ pipeline {
        steps {
          sh "rm -rf *"
          sh "git clone https://github.com/nawres-hamdi/jenkins-helloworld-1"
-       }
-    }
+        }
+        }
     stage('build') {
         steps {
          sh "cd jenkins-helloworld-1/ && javac Main.java"
        }
     }
-    stage('run' ) {
+    stage('run') {
         steps {
          sh "cd jenkins-helloworld-1/ && java Main"
         }
